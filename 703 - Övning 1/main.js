@@ -1,13 +1,13 @@
 const sendBtn = document.querySelector("#sendBtn");
 const message = document.querySelector("#message");
-const name = document.querySelector("#name");
+const username = document.querySelector("#name");
 const email = document.querySelector("#email");
 
 
     sendBtn.addEventListener("click", () =>{
 
         if(
-            name.value === ""  || email.value === ""
+            username.value === ""  || email.value === ""
         ){
         message.textContent = "Vänligen fyll i alla fälten";
         }

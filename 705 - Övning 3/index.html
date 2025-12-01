@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Övning 3</title>
+</head>
+<body>
+    <form action="">
+        <label for="username">Användarnamn</label>
+        <input type="text" id="username" placeholder="Användarnamn">
+        <label for="password">Lösenord</label>
+        <input type="password" id="password" placeholder="Lösenord">
+
+        <input type="submit" value="Logga in" id="Login">
+    </form>
+
+    <p id="message"></p>
+
+    <script src="main.js"></script>
+</body>
+</html>
+
+
+<!--
+
+* Jag ska ärligt säga att jag vet inte riktigt grejen med att använda textContent istället för innerHTML. Jag förstår att det går hand i hand med säkerhet för att vid innerHTML så tolkas en hel tagg medan i textContent skrivs enbart text ut på rak arm. 
+
+Men jag sökte runt och frågade faktiskt även chatGPT för jag vill förstå varför innerHTML kan vara skadligt och farligt. Som jag förstår det så tillåter innerHTML personer att exempelvis kunna skriva HTML då denna tolkar en hel tagg. Då kan användare lägga in script, ändra html, byta ut sidans utseende, de kan lägga till ett nytt formulär som "döljer mitt" och fyller någon i den så kan de kopiera dennes uppgifter och liknande. textContent skriver enbart ut text och inget annat. 
+
+-->
