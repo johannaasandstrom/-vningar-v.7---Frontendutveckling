@@ -1,0 +1,55 @@
+:root{
+    --dark: #2C2C2C;
+    --accent: #1E90FF;
+    --light: #FFFFFF; 
+}
+
+body{
+    background-color: var(--dark);
+}
+
+.container-cards{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin: 60px auto;
+}
+
+.cardImg{
+    width: 200px;
+    height: 200px;
+}
+
+.productcard{
+    border: 2px solid black;
+    max-width: 300px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 0 20px 6px rgba(0, 0, 0, 0.3);
+    background-color: var(--light);
+    padding: 14px;
+}
+
+button{
+    background-color: var(--accent);
+    padding: 10px;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+    color: var(--light);
+    font-size: 14px;
+    border-radius: 10px;
+}
+
+button:hover{
+    background-color: orange;
+    transform: scale(1.3);
+    color: var(--dark);
+}
+
+/*Media*/
+
+@media (max-width: 770px) {
+    .container-cards{
+        flex-direction: column;
+        align-items: center;
+    }
+}
