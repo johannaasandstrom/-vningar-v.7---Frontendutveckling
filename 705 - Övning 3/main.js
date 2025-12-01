@@ -12,3 +12,5 @@ form.addEventListener("submit", function(event){
         message.textContent = "Inloggningen lyckades!"
     }
 });
+
+//function (event) = event representerar submit som är den typ vår knapp är - på så sätt når vi knappen men vi måste lägga till en händelse till hela formuläret för att kunna använda preventDefault då vi inte bara kan sätta det på knappen.
