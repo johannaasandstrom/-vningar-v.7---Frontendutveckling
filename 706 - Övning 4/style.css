@@ -1,0 +1,71 @@
+:root{
+    --primary: #2b6cb0;
+    --secondary: #edf2f7;
+    --radius: 8px;
+    --spacing: 16px;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--spacing);
+}
+
+.flower-icon{
+    width: 50px;
+    height: 50px;
+}
+
+.img-card{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 400px;
+    text-align: center;
+    gap: var(--spacing);
+    border: 2px solid black;
+    padding: var(--spacing);
+    border-radius: var(--radius);
+}
+
+.buttons-card{
+    display: flex;
+    gap: var(--spacing);
+    border-radius: var(--radius);
+}
+
+.btn-one{
+    background-color: var(--primary);
+    padding: var(--spacing);
+    border-radius: var(--radius);
+    border: none;
+    cursor: pointer;
+    color: white;
+}
+
+.btn-two{
+    background-color: var(--secondary);
+    padding: var(--spacing);
+    border-radius: var(--radius);
+    border: none;
+    cursor: pointer;
+}
+
+.btn-one:hover, 
+.btn-one:focus{
+    background-color: var(--secondary);
+    color: black;
+}
+
+.btn-two:hover,
+.btn-two:focus{
+    background-color: var(--primary);
+    color: white;
+}
